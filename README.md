@@ -7,7 +7,7 @@ This project is to build a embedded system that to simulate a car runing car tha
 2. Enhance the pid control and add ki and kd. -- 3/13
 ~3. Include wind, hills that could effect how the velocity changes. --3/15~
 3. Include hills that could effect how the velocity changes. 
-～4. Add a driver that could control the velocity of the car. -- 3/15～
+~4. Add a driver that could control the velocity of the car. -- 3/15~
 4. Add a driver that could swith between four different state and also control the velocity of the car.
 ~5. Include gear channel and brake channel that could be controled by the driver. --3/15~
 5. Include four different states.
