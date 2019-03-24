@@ -1,17 +1,51 @@
-# EE590FinalProject
-## Description
-This project is to build a embedded system that to simulate a car runing car that controled by a driver. It is based on the elma and existed cruise control and make the extentions. The system would contain two processes and several channels and several states. The system would include a driver who can effect how the car runing and change the velocity of the car. During the running of the system, the real-time data of the velocity of the car and other information would be plot as one of the goals. Update: The system will use state machine and have five different state including parking brake, stop, forward, backward, sport mode. In the forward state the car could moving forward. In the backward state, the car could move backward. In the stop state, the car has 0 velocity and the diver could change the state. In the parking brake state, the driver couldn't do anything to the car. In the sport mode, the car could run with a higher acceleration.
+Example Elma Project
+===
 
-## Milestones
-1. Build cruse system that could simulate the basic function of the car -- 3/12
-2. Enhance the pid control and add ki and kd. -- 3/13
-~3. Include wind, hills that could effect how the velocity changes. --3/15~
-3. Include hills that could effect how the velocity changes. 
-~4. Add a driver that could control the velocity of the car. -- 3/15~
-4. Add a driver that could swith between four different state and also control the velocity of the car.
-~5. Include gear channel and brake channel that could be controled by the driver. --3/15~
-5. Include five different states.
-6. Expore data from simulations and show with plots  --3/16
-~7. Extra: Try to send the real-time data of the car as a UDP message to the other elma. --TBD~
-7. Extra: Figure out more interesting stuffs that the driver can do during different states.
+[Elma](http://klavinslab.org/elma) is an event loop manager designed to teach embedded and reactive systems programming. This repository contains an example Elma project, showing how to use many Elma features, as well as illustrating how to arrange the files and directories in an Elma project.
 
+The source code for this project is available [on github](https://github.com/klavinslab/elma_project).
+
+Installation
+---
+
+    git clone https://github.com/klavinslab/elma_project.git
+    cd elma_project
+    docker run -v $PWD:/source -it klavins/elma:latest bash
+    make
+    make docs
+
+
+Execution
+---
+To run the stopwatch, type
+
+    bin/stopwatch
+
+The stopwatch is controlled via the keyboard, via these keys:
+- **s**: Start or stop
+- **l**: Lap
+- **r**: Reset
+- **q**: Quit
+
+Testing
+---
+To run tests, do
+```bash
+bin/test
+```
+
+Architecture
+---
+Describe how your project was designed, what choices you made, how things are organized, etc.
+
+Results
+---
+Describe the results of testing and running your code. Include visuals when possible.
+
+Acknowledgements
+---
+Mention anyone who helped you and how.
+
+References
+---
+List all libraries, articles, stack overflow answers, etc. that you used to get your code working.
