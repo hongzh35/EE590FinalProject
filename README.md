@@ -65,7 +65,7 @@ Three are three channels to be used in this project. Channels could help to stor
 - Delta Channel: Store the data to show how long it takes during each update clock cycle of the cruise control class. 
 ### Car Interface
 The interface is a class to display the real time data and status that the driver could see when drving. It will display the velocity, mileage, error information and current state. It also displays the keys for the user to do the simulation.
-![Initial](https://github.com/hongzh35/EE590FinalProject/image/Initial.png "Initial Interface")
+![Initial](https://github.com/hongzh35/EE590FinalProject/blob/master/image/Initial.png "Initial Interface")
 ## Results
 1. Error messege display when the driver tried to step on the gas pedal before switch to right gears
 ![Bad driving](https://github.com/hongzh35/EE590FinalProject/blob/master/image/step_on_too_early.png "Bad driving")
